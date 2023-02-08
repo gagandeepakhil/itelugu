@@ -685,34 +685,77 @@
     </div>
 
     <!-- forms -->
+    <div class="btns">
+      <button class="btn btn-warning">CLICK HERE TO REGISTER TO VIEW THE EVENT</button>
+      <button class="btn btn-outline-primary">CLICK HERE TO REGISTER TO PARTICIPATE IN EVENT</button>
+    </div>
     <div class="forms">
-        <form id="myForm" action="/" method="POST">
-            <div class="purpose">
-                <label required for="purpose">Choose</label>
-                    <select required  onclick="on()" >
-                        <option value="none" >Select an Option</option>
-                        <option  value="visiting">Visiting</option>
-                        <option  value="participating">participating</option>
-                    </select>
-            <input type="hidden" id="purpose" name="purpose" required>
+      
+      <form style="display: none;" id="myForm" class="vform" action="/" method="POST">
+      <div class="purpose dap">
+        <input type="hidden" id="purpose" name="purpose" value="visiting" required>
+        </div>
+        <div class="name dap">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="enter your name here" id="name" required>
+        </div>
+         <div class="insti dap">
+            <label for="insti">Institution/Organization:</label>
+            <input type="text" name="insti" type="hidden"  placeholder="enter your organization here" id="institution" required>
+        </div>
+        <div class="affiliation dap">
+          <label for="Affiliation">Affiliation/Designation:</label>
+           <input type="text" name="affiliation" placeholder="enter your designation here" id="affiliation" required>
+        </div>
+        <div class="age dap">
+            <label for="Age">Age:</label>
+            <input type="number" maxlength="3" placeholder="enter your age here" name="age" id="age" required>
+        </div>
+        <div class="sex dap">
+            <label for="sex">Sex:</label>
+            <select required  onclick="sc()" >
+                <option value="none" >Select an Option</option>
+                <option  value="Male">Male</option>
+                <option  value="Female">Female</option>
+                <option  value="Others">Others</option>
+            </select>
+            <input type="hidden" id="sex" name="sex">
+        </div>
+        <div class="city dap">
+            <label for="city">City:</label>
+            <input type="text" name="city" placeholder="enter your city here" id="city" required>
+        </div>
+        <div class="number dap">
+            <label for="phone">Mobile:</label>
+            <input maxlength="10" placeholder="enter your phone number" name="number" id="number" required>
+        </div>
+        <div class="mail dap">
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail" placeholder="enter your mail here" id="mail" required>
+        </div>
+        <button class="btn btn-primary">Register</button>
+    </form>
+        <form style="display: none;" id="myForm" class="pform" action="/" method="POST">
+            <div class="purpose dap">
+            <input type="hidden" id="purpose" name="purpose" value="participating" required>
             </div>
-            <div class="name">
-                <label for="name">Name</label>
+            <div class="name dap">
+                <label for="name">Name:</label>
                 <input type="text" name="name" placeholder="enter your name here" id="name" required>
             </div>
-             <div class="insti">
-                <label for="insti">Institution/Organization</label>
+             <div class="insti dap">
+                <label for="insti">Institution/Organization:</label>
                 <input type="text" name="insti" type="hidden"  placeholder="enter your organization here" id="institution" required>
             </div>
-            
-                <label for="Affiliation">Affiliation/Designation</label>
-                <input type="text" name="affiliation" placeholder="enter your designation here" id="affiliation" required>
-            
-            <div class="age">
-                <label for="Age">Age</label>
+            <div class="affiliation dap">
+              <label for="Affiliation">Affiliation/Designation:</label>
+              <input type="text" name="affiliation" placeholder="enter your designation here" id="affiliation" required>
+            </div>
+            <div class="age dap">
+                <label for="Age">Age:</label>
                 <input type="number" maxlength="3" placeholder="enter your age here" name="age" id="age" required>
             </div>
-            <div class="sex">
+            <div class="sex dap">
                 <label for="sex">Sex:</label>
                 <select required  onclick="sc()" >
                     <option value="none" >Select an Option</option>
@@ -722,19 +765,19 @@
                 </select>
                 <input type="hidden" id="sex" name="sex">
             </div>
-            <div class="city">
-                <label for="city">City</label>
+            <div class="city dap">
+                <label for="city">City:</label>
                 <input type="text" name="city" placeholder="enter your city here" id="city" required>
             </div>
-            <div class="number">
-                <label for="phone">Phone Number</label>
-                <input type="number" maxlength="10" placeholder="enter your phone number here" name="number" id="number" required>
+            <div class="number dap">
+                <label for="phone">Mobile:</label>
+                <input maxlength="10" placeholder="enter your phone number" name="number" id="number" required>
             </div>
-            <div class="mail">
-                <label for="mail">Mail</label>
+            <div class="mail dap">
+                <label for="mail">Mail:</label>
                 <input type="email" name="mail" placeholder="enter your mail here" id="mail" required>
             </div>
-            <div class="guesth">
+            <div class="guesth dap">
                 <div class="require">
                     <label for="requ">Need guest house?</label>
                         <select  onclick="checks()" >
@@ -745,13 +788,13 @@
                     <input type="hidden" id="require" name="require" >
                 </div>
                 <div class="gues">
-                    <div class="toa">
-                        <label for="arrivaldate">Date of Arrival</label>
-                        <input value="none" type="date" name="arrivaldate" id="adate" >
-                        <label for="arrivaltime">Time of Arrival</label>
-                        <input value="none" type="time" name="arrivaltime" id="atime" >
+                    <div class="toa dap">
+                        <label for="arrivaldate">Date of Arrival:</label>
+                        <input type="date" name="arrivaldate" id="adate" >
+                        <label for="arrivaltime">Time of Arrival:</label>
+                        <input type="time" name="arrivaltime" id="atime" >
                     </div>
-                    <div class="mode">
+                    <div class="mode dap">
                         <label for="mode">Mode of transportation:</label>
                         <select  onclick="modesel()" >
                             <option value="none" >Select an Option</option>
@@ -762,10 +805,10 @@
                         </select>
                         <input type="hidden" id="mode" name="mode">
                     </div>
-                    <div class="tod">
-                        <label for="departuredate">Date of Departure</label>
+                    <div class="tod dap">
+                        <label for="departuredate">Date of Departure:</label>
                         <input type="date" name="departuredate" id="ddate" >
-                        <label for="departuretime">Time of Departure</label>
+                        <label for="departuretime">Time of Departure:</label>
                         <input type="time" name="departuretime" id="dtime" >
                     </div>
                 </div>

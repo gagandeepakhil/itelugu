@@ -126,9 +126,6 @@ body{
     height: 500px;
 
 }
-
-
-
 .car {
     width: 100%;
     height: 100%;
@@ -553,14 +550,114 @@ animation: slideUp 1s;
  }
 
 /* forms  */
-.guesth,.gues{
-  display: none;
+.btns,.forms{
+  margin: auto;
 }
 .formss form{
   display: flex;
   flex-direction: column;
 }
+.pform,.vform{
+  display: none;
+}
+.forms label{
+  margin-right: 5%;
+}
+.btns{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+.btns button{
+  border-radius: 10px;
+}
+.btn-warning{
+  background-color: orange;
+  color:white;
+}
+.btn-outline-primary{
+  color:orange;
+  border: 1px solid orange;
+}
+.btn-outline-primary:hover
+{
+  background-color: #d27742;
+}
+@keyframes Slideup {
+   0% {
+    height: 300px;
+   }
+   100% {
+    height: 0px;
+   }
+}
+@keyframes Slide2up {
+  0% {
+   height: 300px;
+  }
+  100% {
+   height: 0px;
+  }
+}
+@keyframes Slidedown1 {
+  0% {
+   height: 0px;
+  }
+  100% {
+   height: 300px;
+  }
+}
+@keyframes Slidedown2 {
+  0% {
+   height: 0px;
+  }
+  100% {
+   height: 500px;
+  }
+}
+.sup{
+  animation: Slideup 1s;
+}
+.s2up{
+ animation: Slide2up 3s;
+}
+.s1down{
+  animation: Slidedown1 1s;
+}
+.s2down{
+  animation: Slidedown2 3s;
+}
 
+.forms{
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+  width: 40vw;
+  font-size: 1.4rem;
+}
+#myForm{
+  padding: 2% 0;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+}
+.dap{
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+}
+form label{
+  color: brown;
+}
+form input,select{
+  border: 1px solid rgb(238, 157, 6);
+  border-style: groove;
+  border-radius: 7px;
+  box-shadow:1.5px 1.5px 1.5px black;
+}
 /* posters */
 .bposter img{
   width: 100%;

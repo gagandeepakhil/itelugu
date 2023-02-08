@@ -1,0 +1,15 @@
+.participantsg,.participantsng{
+    display: none;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin:2% 0;
+}
+.thead-dark{
+    background-color: black;
+    color:white ;
+}
+.table td {border: none !important; border-right: solid 1px #ccc !important;}
