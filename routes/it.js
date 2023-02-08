@@ -8,6 +8,5 @@ router.get("/",function(req,res){
    res.render('index',{})
 })
 router.post("/",itcontrol.send_details) 
-router.get("/details",itcontrol.it_details)
 
 module.exports=router;
