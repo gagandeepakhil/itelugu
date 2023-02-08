@@ -3,10 +3,13 @@ const bp=require("body-parser");
 const app=express();
 const mongoose = require('mongoose');
 const alert=require('alert')
+const router = express.Router();
+
 
 app.set("view engine","ejs");
 app.use(bp.urlencoded({extended:true}))
-app.use(express.static("public"))
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded({ extended: true }));
 
 
 const dbURI="mongodb+srv://gagan:gagan@cluster.xdg5ro5.mongodb.net/?retryWrites=true&w=majority"
@@ -80,7 +83,7 @@ function sendD(itelugu){
 function suc(){
     alert("data submitted succesfully :)")
 }   
-app.get("/",function(req,res){
+router.get("/",function(req,res){
     
    res.render('index.ejs',{})
     
@@ -88,7 +91,7 @@ app.get("/",function(req,res){
 
 
 
-app.get("/details",function(req,res){
+router.get("/details",function(req,res){
     sendD(itelugu)
     res.render('details.ejs',{
         data:data,
@@ -96,7 +99,7 @@ app.get("/details",function(req,res){
      
  })
 
-app.post("/",function(req,res){
+router.post("/",function(req,res){
     var data=req.body;
     const blog = new itelugu(data);
     blog.save()
