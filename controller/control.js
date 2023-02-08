@@ -15,7 +15,10 @@ function suc(){
 }   
 
 const it_details=(req,res)=>{
-    sendD(itelugu)
+    itelugu.find((err,dat)=>{
+        var datas=Array.from(dat)
+        data.push(datas)
+        data=[data[data.length-1]]})
     res.render('details.ejs',{
         data:data,
     })
