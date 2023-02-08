@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styled.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100&display=swap" rel="stylesheet">
+    <title>REGISTRATIONS</title>
+</head>
+<body>
+    <div class="visitors">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">PURPOSE FOR REGISTERING</th>
+                <th scope="col">NAME</th>
+                <th scope="col">AFFILIATION</th>
+                <th scope="col">INSTITUTION</th>
+                <th scope="col">AGE</th>
+                <th scope="col">SEX</th>
+                <th scope="col">CITY</th>
+                <th scope="col">NUMBER</th>
+                <th scope="col">MAIL</th>
+              </tr>
+            </thead>
+            <tbody>
+                    <% data.forEach(function (dat){ %>
+                         <% dat.forEach(function (da){ %> 
+                        <% if(da.purpose=="visiting"){ %>
+                        <tr>
+                            <th scope="row"><%= da._id %> </th>
+                            <td><%= da.purpose %></td>
+                            <td><%= da.name %></td>
+                            <td><%= da.affiliation %></td>
+                            <td><%= da.insti %></td>
+                            <td><%= da.age %></td>
+                            <td><%= da.sex %></td>
+                            <td><%= da.city %></td>
+                            <td><%= da.number %></td>
+                            <td><%= da.mail %></td>
+                        </tr>
+                    <% }})}) %>
+                
+            </tbody>
+          </table>
+    </div>
+    <div class="participantsng">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">PURPOSE FOR REGISTERING</th>
+                <th scope="col">NAME</th>
+                <th scope="col">AFFILIATION</th>
+                <th scope="col">INSTITUTION</th>
+                <th scope="col">AGE</th>
+                <th scope="col">SEX</th>
+                <th scope="col">CITY</th>
+                <th scope="col">NUMBER</th>
+                <th scope="col">MAIL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <% data.forEach(function (dat){ %>
+                    <% dat.forEach(function (da){ %> 
+                   <% if(da.purpose=="participating"){ %>
+                    <% if(da.require!="Yes"){ %> 
+                   <tr>
+                       <th scope="row"><%= da._id %> </th>
+                       <td><%= da.purpose %></td>
+                       <td><%= da.name %></td>
+                       <td><%= da.affiliation %></td>
+                       <td><%= da.insti %></td>
+                       <td><%= da.age %></td>
+                       <td><%= da.sex %></td>
+                       <td><%= da.city %></td>
+                       <td><%= da.number %></td>
+                       <td><%= da.mail %></td>
+                   </tr>
+               <% }}})}) %>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="participantsg">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">PURPOSE FOR REGISTERING</th>
+                <th scope="col">NAME</th>
+                <th scope="col">AFFILIATION</th>
+                <th scope="col">INSTITUTION</th>
+                <th scope="col">AGE</th>
+                <th scope="col">SEX</th>
+                <th scope="col">CITY</th>
+                <th scope="col">NUMBER</th>
+                <th scope="col">MAIL</th>
+                <th scope="col">ARRIVAL DATE</th>
+                <th scope="col">ARRIVAL TIME</th>
+                <th scope="col">MODE OF TRANSPORT</th>
+                <th scope="col">DEPARTURE DATE</th>
+                <th scope="col">DEPARTURE TIME</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(function (dat){ %>
+                    <% dat.forEach(function (da){ %> 
+                   <% if(da.purpose=="participating"){ %>
+                    <% if(da.require=="Yes"){ %> 
+                   <tr>
+                       <th scope="row"><%= da._id %> </th>
+                       <td><%= da.purpose %></td>
+                       <td><%= da.name %></td>
+                       <td><%= da.affiliation %></td>
+                       <td><%= da.insti %></td>
+                       <td><%= da.age %></td>
+                       <td><%= da.sex %></td>
+                       <td><%= da.city %></td>
+                       <td><%= da.number %></td>
+                       <td><%= da.mail %></td>
+                       <td><%= da.arrivaldate %></td>
+                       <td><%= da.arrivaltime %></td>
+                       <td><%= da.mode %></td>
+                       <td><%= da.departuredate %></td>
+                       <td><%= da.departuretime %></td>
+                   </tr>
+               <% }}})}) %>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>
