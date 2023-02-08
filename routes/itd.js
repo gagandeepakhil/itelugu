@@ -4,13 +4,13 @@ const itelugu=require("../models/ite")
 
 
 router.get("/",(req,res)=>{
-    var data=[]
+    var da=[]
     itelugu.find((err,dat)=>{
         var datas=Array.from(dat)
-        data.push(datas)
-        data=[data[data.length-1]]
+        da.push(datas)
+        da=[da[da.length-1]]
         res.render('details.ejs',{
-            data:data,
+            data:da,
         })
     })
 })
