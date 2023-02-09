@@ -578,6 +578,7 @@ animation: slideUp 1s;
   color:white;
 }
 .btn-outline-primary{
+  font-size: 0.9em;
   color:orange;
   border: 1px solid orange;
 }
@@ -647,7 +648,7 @@ animation: slideUp 1s;
 .dap{
   padding-bottom: 1%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 form label{
   color: brown;
