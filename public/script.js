@@ -97,19 +97,6 @@ $(function(){
 
   // guest house
 
-  // function on() {
-  //   if(document.body.getElementsByTagName('select')[0].value=="participating"){
-  //     document.getElementsByClassName("guesth")[0].style.display = "block";
-  //     document.getElementById("purpose").value="participating"
-  //   }
-    
-  //   if(document.body.getElementsByTagName('select')[0].value=="visiting"){
-  //     document.getElementsByClassName("guesth")[0].style.display = "none";
-  //     document.getElementById("purpose").value="visiting"
-  //   }
-    
-  // }
-
 
   function sc(){
     if(document.body.getElementsByTagName('select')[1].value=="Male")
@@ -196,12 +183,100 @@ document.getElementsByClassName('btn-outline-primary')[0].addEventListener('clic
  });
 //cards events
 
-  const c=Array.from(document.getElementsByClassName('cardi')) ;
-c.forEach(ele=>(
-    ele.addEventListener('mouseover',function(){
-        ele.classList.toggle('is-flipped');
-    })
-));
+/*
+OVERVIEW
+A simple vertical carousel
+
+Slides are cycled through by the two toggles on the right, previous and next. 
+
+Next
+=> toggle clicked
+=> active slide is faded out, moved up
+=> next slide is faded in, moved up
+
+Previous
+=> toggle clicked
+=> active slide is faded out, moved down
+=> next slide is faded in, moved down
+*/
+
+
+
+function eon1(){
+  document.getElementById('einfo1').style.display="block"
+}
+function eoff1(){
+  document.getElementById('einfo1').style.display="none"
+}
+function eon2(){
+  document.getElementById('einfo2').style.display="block"
+}
+function eoff2(){
+  document.getElementById('einfo2').style.display="none"
+}
+function eon3(){
+  document.getElementById('einfo3').style.display="block"
+}
+function eoff3(){
+  document.getElementById('einfo3').style.display="none"
+}
+function eon4(){
+  document.getElementById('einfo4').style.display="block"
+}
+function eoff4(){
+  document.getElementById('einfo4').style.display="none"
+}
+function eon5(){
+  document.getElementById('einfo5').style.display="block"
+}
+function eoff5(){
+  document.getElementById('einfo5').style.display="none"
+}
+function eon6(){
+  document.getElementById('einfo6').style.display="block"
+}
+function eoff6(){
+  document.getElementById('einfo6').style.display="none"
+}
+function eon7(){
+  document.getElementById('einfo7').style.display="block"
+}
+function eoff7(){
+  document.getElementById('einfo7').style.display="none"
+}
+function eon8(){
+  document.getElementById('einfo8').style.display="block"
+}
+function eoff8(){
+  document.getElementById('einfo8').style.display="none"
+}
+
+var x=window.matchMedia("(max-width:800px)")
+change(x);
+
+
+function change(x){
+  if(x.matches){
+    const c=Array.from(document.getElementsByClassName('cardi')) ;
+    c.forEach(ele=>(
+        ele.addEventListener('mouseover',function(){
+
+          ele.classList.toggle('is-flipped');
+
+        })
+    ));
+  }
+  else{
+    const c=Array.from(document.getElementsByClassName('cardi')) ;
+    c.forEach(ele=>(
+        ele.addEventListener('mouseover',function(){
+          setTimeout(()=> 
+          ele.classList.toggle('is-flipped')
+          ,500)
+        })
+    ));
+  }
+}
 
 //support us
 

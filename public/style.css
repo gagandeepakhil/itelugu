@@ -3,16 +3,16 @@ body{
 }
 .n{
     font-family: ntr;
-    font-size: 14.5px;
+    font-size: 18px;
     color: black;
   } 
   .navbar-nav>li{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .na{
     background-color: #d27742;
-    padding:0 30px 0 30px;
+    padding:0 2px 0 2px;
   }
   .nav-link{
     color: whitesmoke;
@@ -21,8 +21,9 @@ body{
     display: none;
 }
 #titlei{
-    width: 99vw;
-    height: 80px;
+    width: 90vw;
+    height: 60px;
+    opacity: 0.5;
 }
 .carouselpc{
     display: none;
@@ -313,7 +314,7 @@ transform: translateX(0);
 }
 
 /* guests */
-#guestinfo1,#guestinfo2,#guestinfo3,#guestinfo4,#guestinfo5,#guestinfo6,#guestinfo7{
+#guestinfo1,#guestinfo2,#guestinfo3,#guestinfo4,#guestinfo5,#guestinfo6,#guestinfo7,#guestinfo8{
   display: none; 
   position: fixed;
   left: 0;
@@ -331,6 +332,8 @@ transform: translateX(0);
   text-align: center;
   letter-spacing: 2px;
   padding-top:5em;
+  overflow: scroll;
+  
 }
 .guestspc{
   display: none;
@@ -429,12 +432,11 @@ transform: translateX(0);
   width: 100%;
   height: 95vh;
   perspective: 500px;
-  /* margin: 0 2%; */
   padding:0 1% 2% ;
 }
 .cardi{
   width: 100%;
-  height: 100%;
+  height: 95vh;
   transition:transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -450,7 +452,6 @@ transform: translateX(0);
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* overflow: hidden; */
   border:10px solid orange;
   border-radius: 16px;
   box-shadow: 10px 10px 10px;
@@ -492,6 +493,9 @@ transform: translateX(0);
   text-align: left;
   margin-left:4% ;
 }
+.tall p{
+  margin:2%;
+}
 .ta{
   position: absolute;
   top:16%;
@@ -504,6 +508,78 @@ transform: translateX(0);
   text-align: left;
   margin-left:4% ;
 }
+
+
+.t{
+  color: white;
+  background-color:black;
+}
+.t1{
+  background-color: antiquewhite;
+}
+.table{
+  background-color: black;
+  border:10px solid rgb(0,0,0) !important;
+  border-radius: 30px !important;
+  border-collapse: separate;
+}
+.table1{
+  margin: 0;
+  margin: auto;
+  width: 60%;
+}
+.dap2{
+  font-weight: 600;
+}
+.table1 td {border-bottom: 0px !important;border-right: solid 1px #ccc !important;}
+
+.table1 h3{
+  text-align: center;
+  margin: 2% 0;
+}
+#einfo1,#einfo2,#einfo3,#einfo4,#einfo5,#einfo6,#einfo7,#einfo8{
+  
+
+
+  display:none ;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(251, 108, 6,0.89);
+  color: #fff;
+  overflow: scroll;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.e5 h3
+{
+  margin-top:35% ;
+}
+.eb{
+  position: absolute;
+  width: 2%;
+  right: 10px;
+  top: 10px;
+  background-color:rgba(241, 131, 21, 0.778);
+  border: 0cm;
+  padding: 0%;
+}
+.cf button{
+  position: relative;
+  top:90%;
+  width: 60%;
+  height: 7%;
+  background-color: orange;
+  border: 3px solid black;
+}
+.ntb{
+  margin-left: 22%;
+}
+
 
 
 @keyframes slideUp {
@@ -535,7 +611,7 @@ animation: slideUp 1s;
 }
 .yesno button{
  margin:2% 3%;
- width: 7%;
+ width: 10%;
  border-radius: 10px;
 }
 .help h2{
@@ -543,10 +619,12 @@ animation: slideUp 1s;
 }
 #yes{
  background-color: orange;
+ width: fit-content;
 }
 #no{
   background-color: rgb(6, 6, 6);
   color: #fff;
+  width: fit-content;
  }
 
 /* forms  */
@@ -635,8 +713,9 @@ animation: slideUp 1s;
   display: flex;
   flex-direction: column;
   padding: 2% 0;
-  width: 40vw;
+  width: 100vw;
   font-size: 1.4rem;
+  overflow: hidden;
 }
 #myForm{
   padding: 2% 0;
@@ -644,6 +723,9 @@ animation: slideUp 1s;
   align-items: flex-start;
   flex-direction: column;
   transition: all 1s ease-in-out;
+}
+#myForm button{
+  align-self: center;
 }
 .dap{
   padding-bottom: 1%;
@@ -661,9 +743,9 @@ form input,select{
 }
 /* posters */
 .bposter img{
-  width: 100%;
+  width: 70%;
+  border-radius: 20px;
 }
-
 
 /* contacts */
 .contact{
@@ -683,72 +765,120 @@ form input,select{
 
 }
 
-  @media (min-width:475px){
-    .n{
-        font-size:30px;
-    }
-    .carouselpc{
-        display: block;
-    }
-    .guestspc{
+.headi{
+  display: inline-block;
+  width: 60vw;
+  padding: 1%;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  color: #074d07;
+  font-weight: 1000;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2%;
+}
+.mailm,.you,.fb{
+  display: flex;
+  flex-direction: row;
+}
+.mailm>p,.you>p,.fb>p{
+  padding-left: 10px;
+}
+
+.contact a{
+  text-decoration: none;
+  color: #2C2C2C;
+}
+
+@media (min-width:475px){
+  .n{
+      font-size:30px;
+  }
+  .carouselpc{
       display: block;
-    }
-    .carouselmob{
-        display: none;
-    }
-    .ca{
-      margin: 5px 10px 10px;
-    }
-    .guestsmob,.ca svg{
+  }
+  .guestspc{
+    display: block;
+  }
+  .carouselmob{
       display: none;
-    }
-    .contents li{
-      text-align: justify;
-    }
-
   }
- 
-  @media(min-width:560px){
-    #logo{
-        display: block;
-        width: 6%;
-        height: 6%;
-        margin-right: 10px;
-      }
+  .ca{
+    margin: 5px 10px 10px;
   }
-  @media (min-width:760px){
-    #titlei{
-        height: 130px;
-    }
+  .guestsmob,.ca svg{
+    display: none;
   }
-  @media (min-width:1024px){
-    #titlei{
-        height: 220px;
-    }
+  .contents li{
+    text-align: justify;
   }
 
-  @media (max-width:430px) {
-    .cardf{
-     height:100vh;
+}
+
+@media(min-width:560px){
+  #logo{
+      display: block;
+      width: 6%;
+      height: 6%;
+      margin-right: 10px;
     }
-    .dir{
-     flex-direction: column;
-    }
-    .yesno button{
-     margin:2% 3%;
-     width: 20%;
-     border-radius: 10px;
-    }
+}
+@media (min-width:760px){
+  #titlei{
+      height: 130px;
   }
- @media (max-width:770px) and (min-width:430px){
-   .dir{
-     flex-wrap: wrap;
-   }
-   .cardf{
-     width: 50%;
-   }
- 
+}
+@media (min-width:1024px){
+  #titlei{
+      height: 220px;
   }
+
+@media (max-width:430px){
+  .table1{
+    width: 95%;
+  }
+}
+@media (max-width:770px) and (min-width:430px){
+  .table1{
+    width:86%;
+  }
+  .cardf{
+    height:110vh;
+   }
+   .cardi{
+     height: 110vh;
+   }
+}
+
+@media (max-width:430px) {
+  .cardf{
+   height:110vh;
+  }
+  .cardi{
+    height: 110vh;
+  }
+  .dir{
+   flex-direction: column;
+  }
+  .yesno button{
+   margin:2% 3%;
+   width: 20%;
+   border-radius: 10px;
+  }
+}
+@media (max-width:770px) and (min-width:430px){
+ .dir{
+   flex-wrap: wrap;
+ }
+ .cardf{
+   width: 50%;
+ }
+
+}
 
 
   @font-face {
