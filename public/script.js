@@ -94,38 +94,52 @@ $(function(){
   function off7() {
     document.getElementById("guestinfo7").style.display = "none";
   }
+  function on8() {
+    document.getElementById("guestinfo8").style.display = "block";
+  }
+  
+  function off8() {
+    document.getElementById("guestinfo8").style.display = "none";
+  }
+  function on9() {
+    document.getElementById("guestinfo9").style.display = "block";
+  }
+  
+  function off9() {
+    document.getElementById("guestinfo9").style.display = "none";
+  }
 
   // guest house
 
 
   function sc(){
-    if(document.body.getElementsByTagName('select')[1].value=="Male")
+    if(document.body.getElementsByTagName('select')[1].value=="పురుషుడు")
     document.getElementById("sex").value="Male"
-    if(document.body.getElementsByTagName('select')[1].value=="Female")
+    if(document.body.getElementsByTagName('select')[1].value=="స్త్రీ")
     document.getElementById("sex").value="Female"
-    if(document.body.getElementsByTagName('select')[1].value=="Others")
+    if(document.body.getElementsByTagName('select')[1].value=="ఇతరులు")
     document.getElementById("sex").value="Others"
   }
 
   function modesel(){
     
-      if(document.body.getElementsByTagName('select')[3].value=="Air")
+      if(document.body.getElementsByTagName('select')[3].value=="గాలి")
       document.getElementById("mode").value="Air"
-      if(document.body.getElementsByTagName('select')[3].value=="Bus")
+      if(document.body.getElementsByTagName('select')[3].value=="బస్సు")
       document.getElementById("mode").value="Bus"
-      if(document.body.getElementsByTagName('select')[3].value=="Train")
+      if(document.body.getElementsByTagName('select')[3].value=="రైలు")
       document.getElementById("mode").value="Train"
-      if(document.body.getElementsByTagName('select')[3].value=="Others")
+      if(document.body.getElementsByTagName('select')[3].value=="ఇతర")
       document.getElementById("mode").value="Others"
   
   }
 
   function checks(){
-    if(document.body.getElementsByTagName('select')[2].value=="Yes"){
+    if(document.body.getElementsByTagName('select')[2].value=="అవును"){
       document.getElementsByClassName("gues")[0].style.display = "block";
       document.getElementById("require").value="Yes"
     }
-    if(document.body.getElementsByTagName('select')[2].value=="No"){
+    if(document.body.getElementsByTagName('select')[2].value=="లేదు"){
       document.getElementsByClassName("gues")[0].style.display = "none";
       document.getElementById("require").value="No"
     }
