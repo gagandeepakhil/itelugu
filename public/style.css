@@ -492,13 +492,14 @@ transform: translateX(0);
 }
 .cardf{
   width: 100%;
-  height: 95vh;
+  height: 83vh;
   perspective: 500px;
-  padding:0 1% 2% ;
+  padding:0 1% ;
+  line-height: 2;
 }
 .cardi{
   width: 100%;
-  height: 95vh;
+  height: 83vh;
   transition:transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -534,12 +535,12 @@ transform: translateX(0);
 }
 .less{
   position: absolute;
-  top:10%;
+  top:8%;
   left:32%;
 }
 .more{
   position: absolute;
-  top:15%;
+  top:12%;
   left:32%;
 }
 .heads{
@@ -642,6 +643,7 @@ transform: translateX(0);
 }
 .thippu{
   margin-top: 5%;
+  display: none;
 }
 @media (max-width:430px){
   .orey{
@@ -650,6 +652,14 @@ transform: translateX(0);
   }
   .eb{
     width: 8%;
+  }
+}
+@media (max-width:800px){
+  .thippu{
+    display: block;
+    font-weight: 700;
+    position: absolute;
+    top:100%;
   }
 }
 .ntb{
