@@ -632,13 +632,25 @@ transform: translateX(0);
   border: 0cm;
   padding: 0%;
 }
-.cf button{
-  position: relative;
-  top:90%;
-  width: 60%;
-  height: 7%;
+.orey{
+  font-size: x-large;
+ margin: 2% 0;
+  width: 40%;
+  /* height: 5%; */
   background-color: orange;
   border: 3px solid black;
+}
+.thippu{
+  margin-top: 5%;
+}
+@media (max-width:430px){
+  .orey{
+    width: 70%;
+    font-size: larger;
+  }
+  .eb{
+    width: 8%;
+  }
 }
 .ntb{
   margin-left: 22%;
