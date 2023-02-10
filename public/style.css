@@ -856,10 +856,10 @@ form input,select{
 
 @media (max-width:430px) {
   .cardf{
-   height:110vh;
+   height:105vh;
   }
   .cardi{
-    height: 110vh;
+    height: 105vh;
   }
   .dir{
    flex-direction: column;
