@@ -375,7 +375,7 @@ transform: translateX(0);
 }
 
 /* guests */
-#guestinfo1,#guestinfo2,#guestinfo3,#guestinfo4,#guestinfo5,#guestinfo6,#guestinfo7,#guestinfo8,#guestinfo9{
+#guestinfo1,#guestinfo2,#guestinfo3,#guestinfo4,#guestinfo5,#guestinfo6,#guestinfo7,#guestinfo8,#guestinfo9,#guestinfo10{
   display: none; 
   position: fixed;
   left: 0;

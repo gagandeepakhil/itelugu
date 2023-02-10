@@ -108,7 +108,13 @@ $(function(){
   function off9() {
     document.getElementById("guestinfo9").style.display = "none";
   }
-
+  function on10() {
+    document.getElementById("guestinfo10").style.display = "block";
+  }
+  
+  function off10() {
+    document.getElementById("guestinfo10").style.display = "none";
+  }
   // guest house
 
 
