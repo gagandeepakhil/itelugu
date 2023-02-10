@@ -967,10 +967,10 @@ form input,select{
 
 @media (max-width:430px) {
   .cardf{
-   height:90vh;
+   height:70vh;
   }
   .cardi{
-    height: 90vh;
+    height: 70vh;
   }
   .dir{
    flex-direction: column;
