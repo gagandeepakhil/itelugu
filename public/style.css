@@ -836,7 +836,7 @@ form input,select{
   #titlei{
       height: 220px;
   }
-
+}
 @media (max-width:430px){
   .table1{
     width: 95%;
