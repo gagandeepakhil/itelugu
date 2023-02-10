@@ -674,8 +674,7 @@ transform: translateX(0);
   .thippu{
     display: block;
     font-weight: 700;
-    position: absolute;
-    top:150%;
+
   }
 }
 .ntb{
