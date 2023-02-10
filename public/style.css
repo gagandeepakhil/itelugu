@@ -2,6 +2,15 @@
 body{
   font-family: ntr;
 }
+.spu{
+  position: fixed;
+  bottom:9%;
+  right: 3%;
+  width: 60px;
+  height: 60px;
+  z-index: 5;
+}
+
 .n{
     font-family: ntr;
     font-size: 18px;
@@ -743,6 +752,7 @@ animation: slideUp 1s;
 }
 .btns button{
   border-radius: 10px;
+  font-size: 1.4rem;
 }
 .btn-warning{
   background-color: orange;
