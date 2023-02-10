@@ -1,5 +1,6 @@
 body{
   font-family: ntr;
+  font-size: 18px;
 }
 .n{
     font-family: ntr;
@@ -11,20 +12,72 @@ body{
     padding-right: 0px;
   }
   .na{
+    position: fixed;
+    width: 100%;
+    z-index: 3;
     background-color: #d27742;
     padding:0 2px 0 2px;
   }
   .nav-link{
     color: whitesmoke;
   }
+  .pos{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+
+  }
+  .pos img{
+    width: 50vw;
+  }
 #logo{
     display: none;
 }
-#titlei{
-    width: 90vw;
-    height: 60px;
-    opacity: 0.5;
+.ellow{
+  width: 90vw;
+  margin: auto;
+  margin-top: 1em;
+  border: 1px solid black;
+  border-radius: 20px;
 }
+.all_heads center{
+  padding: 0.5% 0;
+}
+.hj{
+  margin: 0 20%;
+  line-height: 2;
+  color: orangered;
+  font-weight: 550;
+}
+.jh{
+
+font-size: large;
+letter-spacing: 1px;
+text-align: start;
+padding-bottom: 10px;
+}
+
+.upa p{
+  margin-left: 80%;
+}
+.kj > .col-lg-4{
+
+  margin-top: 2%;
+}
+.dne h6{
+  margin-bottom: 1%;
+}
+
+
+@media (max-width:430px){
+  .hj{
+      margin: 0;
+  }
+  .upa p{
+      margin: 0%;
+  }
+}
+
 .carouselpc{
     display: none;
 }
@@ -70,6 +123,13 @@ body{
   font-size: large;
   letter-spacing: 1px;
   text-align: start;
+
+}
+.ho li{
+  list-style: square;
+  margin-left: 10px;
+  color: blue;
+  font-weight: 100px;
 }
 .bold{
   font-weight: 1000;
@@ -326,7 +386,7 @@ transform: translateX(0);
   width: 99%; 
   height: 99%; 
   background-color: rgb(0, 0, 0); 
-  z-index: 2; 
+  z-index: 4; 
   cursor: pointer;
   color: aliceblue;
   text-align: center;
@@ -424,6 +484,7 @@ transform: translateX(0);
 /* event cards */
 
 .dir{
+  font-size: 16px;
   width: 98vw;
   display: flex;
   flex-direction: row;
@@ -544,7 +605,7 @@ transform: translateX(0);
   display:none ;
   height: 100vh;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   background-color: rgba(251, 108, 6,0.89);
   color: #fff;
@@ -561,7 +622,7 @@ transform: translateX(0);
 }
 .eb{
   position: absolute;
-  width: 2%;
+  width: 3.6%;
   right: 10px;
   top: 10px;
   background-color:rgba(241, 131, 21, 0.778);
@@ -741,11 +802,7 @@ form input,select{
   border-radius: 7px;
   box-shadow:1.5px 1.5px 1.5px black;
 }
-/* posters */
-.bposter img{
-  width: 70%;
-  border-radius: 20px;
-}
+
 
 /* contacts */
 .contact{
@@ -756,12 +813,18 @@ form input,select{
 /* support us  */
 .pay{
   margin: auto;
-  width: 360px;
+  width: 318px;
   text-align: left;
   overflow: hidden;
   letter-spacing: 2px;
   line-height: 1.5;
   transition:all 1s ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2%;
+  padding-bottom: 0px;
+  background-color: rgb(242, 242, 63);
+  margin-bottom: 2px;
 
 }
 
@@ -835,6 +898,12 @@ form input,select{
 @media (min-width:1024px){
   #titlei{
       height: 220px;
+  }
+  .pos{
+    padding-top: 85px;
+  }
+  .pay{
+    width: 420px;
   }
 }
 @media (max-width:430px){
