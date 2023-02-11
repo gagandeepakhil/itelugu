@@ -587,6 +587,12 @@ transform: translateX(0);
 .he1,.he2{
   margin: 0 15%;
 }
+.tall table{
+ margin: 0 2%; 
+}
+.ta table{
+ margin: 0 2%;
+}
 .tall{
   position: absolute;
   top:23%;
