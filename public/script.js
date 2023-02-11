@@ -278,6 +278,15 @@ function eoff8(){
   document.getElementById('einfo8').style.display="none"
 }
 
+
+// var y=window.matchMedia("(max-width:430px)")
+// cn(y);
+// function cn(y){
+//  if(y.matches){
+//   document.getElementsByClassName('navbar-header')[0].classList.remove('navbar-header')
+
+//  }
+// }
 var x=window.matchMedia("(max-width:800px)")
 change(x);
 
