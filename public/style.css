@@ -27,7 +27,7 @@ body{
 }
 .n{
     font-family: ntr;
-    font-size: 18px;
+    font-size: 32px;
     color: black;
     /* padding-left:25%; */
     
@@ -565,8 +565,9 @@ transform: translateX(0);
   transform: rotateY(180deg);
 }
 .cardi h4{
-  position: absolute;
-  top:2%;
+  /* position: absolute;
+  top:2%; */
+  margin-top: 10px;
   text-align: center;
 }
 .less{
@@ -985,12 +986,25 @@ form input,select{
    }
 }
 
+
 @media (max-width:430px) {
   .cardf{
-   height:60vh;
+   height:80vh;
   }
   .cardi{
-    height: 60vh;
+    height: 80vh;
+  }
+  .tall,.ta,.tall1{
+    font-size: 14px;
+  }
+  .ta p{
+    margin-top: 10px;
+  }
+  .pettu{
+    margin-bottom: 1%;
+  }
+  .pettu2{
+    margin-bottom: 5%;
   }
   .dir{
    flex-direction: column;
