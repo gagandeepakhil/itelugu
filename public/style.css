@@ -443,6 +443,7 @@ transform: translateX(0);
   width: 100px;
   height: 100px;
 }
+
 .gue button{
   border: 0;
   border-bottom: 2px solid black;
@@ -881,6 +882,7 @@ form input,select{
 
 /* support us  */
 .pay{
+  display: none;
   margin: auto;
   width: 318px;
   text-align: left;

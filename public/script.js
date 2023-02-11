@@ -133,7 +133,7 @@ $(function(){
     if(document.body.getElementsByTagName('select')[1].value=="ఇతరులు")
     document.getElementById("sex").value="Others"
   }
-
+  
   function modesel(){
     
       if(document.body.getElementsByTagName('select')[3].value=="గాలి")
@@ -146,14 +146,14 @@ $(function(){
       document.getElementById("mode").value="Others"
   
   }
-
+  
   function checks(){
     if(document.body.getElementsByTagName('select')[2].value=="అవును"){
-      document.getElementsByClassName("gues")[0].style.display = "block";
+      document.getElementsByClassName("gu")[0].classList.remove('gues')
       document.getElementById("require").value="Yes"
     }
     if(document.body.getElementsByTagName('select')[2].value=="లేదు"){
-      document.getElementsByClassName("gues")[0].style.display = "none";
+      document.getElementsByClassName("gu")[0].classList.add('gues')
       document.getElementById("require").value="No"
     }
   }
@@ -170,44 +170,48 @@ $(function(){
   const f1=document.getElementsByClassName('vform')[0];
   const f2=document.getElementsByClassName('pform')[0];
 
-// document.getElementsByClassName('btn-warning')[0].addEventListener('click',()=>{
-//   if(f1.style.display=="none")
-//   {
-//  f1.style.display="inline-flex";
-//  f2.style.display="none";
-//  f1.classList.add('s1down');
-//   }
-//   else if(f1.style.display=="inline-flex")
-//   { 
-//     f1.classList.remove('s1down');
-//     f1.classList.add('sup');
-//     f2.style.display="none";
-//    setTimeout(()=>{
-//     f1.style.display="none";
-//    },1000)
-//   }
+document.getElementsByClassName('vi')[0].addEventListener('click',()=>{
+  if(f1.style.display=="none")
+  {
+ f1.style.display="inline-flex";
+ f2.style.display="none";
+ f1.classList.add('s1down');
+  }
+  else if(f1.style.display=="inline-flex")
+  { 
+    f1.classList.remove('s1down');
+    f1.classList.add('sup');
+    f2.style.display="none";
+   setTimeout(()=>{
+    f1.style.display="none";
+   },1000)
+  }
  
  
-// });
-document.getElementsByClassName('btn-outline-primary')[0].addEventListener('click',()=>{
+});
+const hi=document.getElementsByClassName('pa')[0].addEventListener('click',()=>{
 
   if(f2.style.display=="none")
   {
  f2.style.display="inline-flex";
-//  f1.style.display="none";
+ f1.style.display="none";
  f2.classList.add('s2down');
   }
   else if(f2.style.display=="inline-flex")
   { 
     f2.classList.remove('s2down');
     f2.classList.add('s2up');
-    // f1.style.display="none";
+    f1.style.display="none";
    setTimeout(()=>{
     f2.style.display="none";
    },1000)
   }
 
  });
+
+
+
+
 //cards events
 
 /*
@@ -321,10 +325,10 @@ document.getElementById('yes').addEventListener('click',function(){
   pay.style.display="block";
   pay.classList.add("slidedown");
 });
-document.getElementById('no').addEventListener('click',function(){
-    pay.classList.remove("slidedown");
-    pay.classList.add("slideup");
-    setTimeout(()=>{
-        pay.style.display="none";
-    },1000)
-  });
+// document.getElementById('no').addEventListener('click',function(){
+//     pay.classList.remove("slidedown");
+//     pay.classList.add("slideup");
+//     setTimeout(()=>{
+//         pay.style.display="none";
+//     },1000)
+//   });
