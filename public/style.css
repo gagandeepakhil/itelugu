@@ -1,6 +1,6 @@
 .navbar-header {
     float: left;
-    padding: 15px;
+    padding-left: 205px;
     text-align: center;
     width: 100%;
 }
@@ -749,6 +749,7 @@ animation: slideUp 1s;
  background-color: orange;
  width: fit-content;
 }
+
 #no{
   background-color: rgb(6, 6, 6);
   color: #fff;

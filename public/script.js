@@ -170,38 +170,38 @@ $(function(){
   const f1=document.getElementsByClassName('vform')[0];
   const f2=document.getElementsByClassName('pform')[0];
 
-document.getElementsByClassName('btn-warning')[0].addEventListener('click',()=>{
-  if(f1.style.display=="none")
-  {
- f1.style.display="inline-flex";
- f2.style.display="none";
- f1.classList.add('s1down');
-  }
-  else if(f1.style.display=="inline-flex")
-  { 
-    f1.classList.remove('s1down');
-    f1.classList.add('sup');
-    f2.style.display="none";
-   setTimeout(()=>{
-    f1.style.display="none";
-   },1000)
-  }
+// document.getElementsByClassName('btn-warning')[0].addEventListener('click',()=>{
+//   if(f1.style.display=="none")
+//   {
+//  f1.style.display="inline-flex";
+//  f2.style.display="none";
+//  f1.classList.add('s1down');
+//   }
+//   else if(f1.style.display=="inline-flex")
+//   { 
+//     f1.classList.remove('s1down');
+//     f1.classList.add('sup');
+//     f2.style.display="none";
+//    setTimeout(()=>{
+//     f1.style.display="none";
+//    },1000)
+//   }
  
  
-});
+// });
 document.getElementsByClassName('btn-outline-primary')[0].addEventListener('click',()=>{
 
   if(f2.style.display=="none")
   {
  f2.style.display="inline-flex";
- f1.style.display="none";
+//  f1.style.display="none";
  f2.classList.add('s2down');
   }
   else if(f2.style.display=="inline-flex")
   { 
     f2.classList.remove('s2down');
     f2.classList.add('s2up');
-    f1.style.display="none";
+    // f1.style.display="none";
    setTimeout(()=>{
     f2.style.display="none";
    },1000)
