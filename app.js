@@ -12,20 +12,20 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result =>{ 
     const port = process.env.PORT || 3000;
     app.listen(port)
-    app.use(bp.urlencoded({extended:true}))
-    app.use(express.static(path.join(__dirname, "public")));
-    app.use(express.urlencoded({ extended: true }));
-
-    app.set("view engine","ejs");
-    app.set('views', __dirname + '/views');
-
-    app.use("/details",itroutesd);
-    app.use("/",itroutes);
+    
   
   })
   .catch(err => console.log(err));
 
+  app.use(bp.urlencoded({extended:true}))
+  app.use(express.static(path.join(__dirname, "public")));
+  app.use(express.urlencoded({ extended: true }));
 
+  app.set("view engine","ejs");
+  app.set('views', __dirname + '/views');
+
+  app.use("/details",itroutesd);
+  app.use("/",itroutes);
 
 
 module.exports=app
