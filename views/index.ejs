@@ -197,6 +197,7 @@
                     </div>
                     <div class="c1 contents">
                       <div style="background-color: rgb(242, 242, 63);"  id="home">
+                        <img src="entry.jpg" alt="">
                         <div class="all_heads">
                             <center><h1 style="color: red; font-weight: 600;">తెలుగు విభాగం</h1></center>
                             <center><h1 style="color: rgb(77, 176, 247); font-weight: 550;text-shadow: 2px 2px 3px black;">ఆంధ్ర విశ్వకళాపరిషత్</h1></center>
@@ -438,6 +439,7 @@
 </svg></h2>
                       </div>
                       <div class="c1 contents">
+                        <img src="end.jpg" alt="">
                           <p><li>మొత్తం మీద తెలుగుభాషపై ఉన్న మక్కువతో జరుపుకునే, తెలుగువారి అచ్చమైన తెలుగుపండుగగా ఈ సభలను సదస్సులను నిర్వహించి, నిజమైన శాశ్వతమైన భాషాభివృద్దికి దోహదపడాలని కోరుకుంటూ, <span class="bold">“అంతర్జాతీయ తెలుగు భాషా ఉత్సవాలు-2023”</span> </li></p>
                           <span class="end big">“అంతర్జాతీయ తెలుగు భాషా ఉత్సవాలు-2023” <br>international Telugu Language Utsavams by Guides& Universities (iTeLUGU)  </span>
                           <p><li>ఆంధ్ర విశ్వకళాపరిషత్ మరియు సమైక్య భారతి  సంయుక్త ఆధ్వర్యంలో జరిగీ ఈ భాషా ఉత్సవాల <a href="#timeline">స్థూల ప్రణాళిక ప్రస్తుతానికి</a>  ఇలా ఉంది.</li></p>
@@ -1252,13 +1254,12 @@
         </div>
         <div class="sex dap">
             <label for="sex">లింగం:</label>
-            <select required  onclick="sc()" >
+            <select required name="sex">
                 <option value="none" >ఒక ఎంపికను ఎంచుకోండి</option>
                 <option  value="Male">పురుషుడు</option>
                 <option  value="Female">స్త్రీ</option>
                 <option  value="Others">ఇతరులు</option>
             </select>
-            <input type="hidden" id="sex" name="sex">
         </div>
         <div class="city dap">
             <label for="city">నగరం:</label>
@@ -1287,7 +1288,7 @@
                 <input type="text" name="insti" type="hidden"  id="institution" required>
             </div>
             <div class="affiliation dap">
-              <label for="Affiliation">సంస్థ:</label>
+              <label for="Affiliation">హోదా:</label>
               <input type="text" name="affiliation" id="affiliation" required>
             </div>
             <div class="age dap">
@@ -1296,13 +1297,12 @@
             </div>
             <div class="sex dap">
                 <label for="sex">లింగం:</label>
-                <select required  onclick="sc()" >
+                <select required  name="sex" >
                     <option value="none" >ఒక ఎంపికను ఎంచుకోండి</option>
                     <option  value="Male">పురుషుడు</option>
                     <option  value="Female">స్త్రీ</option>
                     <option  value="Others">ఇతరులు</option>
                 </select>
-                <input type="hidden" id="sex" name="sex">
             </div>
             <div class="city dap">
                 <label for="city">నగరం:</label>
@@ -1319,14 +1319,13 @@
             <div class="guesth dap">
                 <div class="require">
                     <label for="requ">గెస్ట్ హౌస్ కావాలా?</label>
-                        <select  onclick="checks()" >
-                        <option onclick="checks()" value="none" >ఒక ఎంపికను ఎంచుకోండి</option>
-                            <option onclick="checks()" value="Yes">అవును</option>
-                            <option onclick="checks()" value="No">లేదు</option>
+                        <select id="require" name="require">
+                        <option  value="none" >ఒక ఎంపికను ఎంచుకోండి</option>
+                            <option value="Yes" >అవును</option>
+                            <option value="No">లేదు</option>
                         </select>
-                    <input type="hidden" id="require" name="require" >
                 </div>
-                <div class="gues gu">
+                <div class="gues">
                     <div class="toa dap">
                         <label for="arrivaldate">రాక తేదీ:</label>
                         <input type="date" name="arrivaldate" id="adate" >
@@ -1335,14 +1334,13 @@
                     </div>
                     <div class="mode dap">
                         <label for="mode">రవాణా విధానం:</label>
-                        <select  onclick="modesel()" >
+                        <select name="mode">
                             <option value="none" >ఒక ఎంపికను ఎంచుకోండి</option>
                             <option  value="Air">గాలి</option>
                             <option  value="Train">రైలు</option>
                             <option  value="Bus">బస్సు</option>
                             <option  value="other">ఇతర</option>
                         </select>
-                        <input type="hidden" id="mode" name="mode">
                     </div>
                     <div class="tod dap">
                         <label for="departuredate">బయలుదేరే తేదీ:</label>

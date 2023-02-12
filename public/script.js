@@ -125,39 +125,6 @@ $(function(){
   // guest house
 
 
-  function sc(){
-    if(document.body.getElementsByTagName('select')[1].value=="పురుషుడు")
-    document.getElementById("sex").value="Male"
-    if(document.body.getElementsByTagName('select')[1].value=="స్త్రీ")
-    document.getElementById("sex").value="Female"
-    if(document.body.getElementsByTagName('select')[1].value=="ఇతరులు")
-    document.getElementById("sex").value="Others"
-  }
-  
-  function modesel(){
-    
-      if(document.body.getElementsByTagName('select')[3].value=="గాలి")
-      document.getElementById("mode").value="Air"
-      if(document.body.getElementsByTagName('select')[3].value=="బస్సు")
-      document.getElementById("mode").value="Bus"
-      if(document.body.getElementsByTagName('select')[3].value=="రైలు")
-      document.getElementById("mode").value="Train"
-      if(document.body.getElementsByTagName('select')[3].value=="ఇతర")
-      document.getElementById("mode").value="Others"
-  
-  }
-  
-  function checks(){
-    if(document.body.getElementsByTagName('select')[2].value=="అవును"){
-      document.getElementsByClassName("gu")[0].classList.remove('gues')
-      document.getElementById("require").value="Yes"
-    }
-    if(document.body.getElementsByTagName('select')[2].value=="లేదు"){
-      document.getElementsByClassName("gu")[0].classList.add('gues')
-      document.getElementById("require").value="No"
-    }
-  }
-
   // form divisions
   // function viewe(){
   //   document.getElementsByClassName('vform')[0].style.display="inline-flex"
@@ -209,7 +176,12 @@ const hi=document.getElementsByClassName('pa')[0].addEventListener('click',()=>{
 
  });
 
-
+document.getElementById('require').addEventListener("click",()=>{
+  if(document.getElementById('require').value=="Yes")
+  document.body.getElementsByClassName('gues')[0].style.display="inline-flex"
+  if(document.getElementById('require').value=="No")
+  document.body.getElementsByClassName('gues')[0].style.display="none"
+})
 
 
 //cards events

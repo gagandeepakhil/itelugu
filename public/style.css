@@ -765,7 +765,7 @@ animation: slideUp 1s;
   display: flex;
   flex-direction: column;
 }
-.pform,.vform{
+.pform,.vform,.gues{
   display: none;
 }
 .forms label{
@@ -898,7 +898,13 @@ form input,select{
   margin-bottom: 2px;
 
 }
-
+.gues{
+  display: none;
+  flex-direction: column;
+  padding: 2% 0;
+  font-size: 1.4rem;
+  overflow: hidden;
+}
 .headi{
   display: inline-block;
   width: 60vw;
