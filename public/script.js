@@ -176,6 +176,12 @@ const hi=document.getElementsByClassName('pa')[0].addEventListener('click',()=>{
 
  });
 
+ function s(){
+  if(document.getElementById('require').value=="Yes")
+  document.body.getElementsByClassName('gues')[0].style.display="inline-flex"
+  if(document.getElementById('require').value=="No")
+  document.body.getElementsByClassName('gues')[0].style.display="none"
+ }
 document.getElementById('require').addEventListener("click",()=>{
   if(document.getElementById('require').value=="Yes")
   document.body.getElementsByClassName('gues')[0].style.display="inline-flex"
