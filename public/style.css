@@ -984,6 +984,9 @@ form input,select{
   .table1{
     width: 95%;
   }
+  .in{
+    width: 60vw;
+  }
   .poster{
     padding-top:40px;
 

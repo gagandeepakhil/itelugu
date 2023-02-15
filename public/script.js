@@ -141,14 +141,14 @@ document.getElementsByClassName('vi')[0].addEventListener('click',()=>{
   if(f1.style.display=="none")
   {
  f1.style.display="inline-flex";
- f2.style.display="none";
+//  f2.style.display="none";
  f1.classList.add('s1down');
   }
   else if(f1.style.display=="inline-flex")
   { 
     f1.classList.remove('s1down');
     f1.classList.add('sup');
-    f2.style.display="none";
+    // f2.style.display="none";
    setTimeout(()=>{
     f1.style.display="none";
    },1000)
@@ -156,25 +156,6 @@ document.getElementsByClassName('vi')[0].addEventListener('click',()=>{
  
  
 });
-const hi=document.getElementsByClassName('pa')[0].addEventListener('click',()=>{
-
-  if(f2.style.display=="none")
-  {
- f2.style.display="inline-flex";
- f1.style.display="none";
- f2.classList.add('s2down');
-  }
-  else if(f2.style.display=="inline-flex")
-  { 
-    f2.classList.remove('s2down');
-    f2.classList.add('s2up');
-    f1.style.display="none";
-   setTimeout(()=>{
-    f2.style.display="none";
-   },1000)
-  }
-
- });
 
  function s(){
   if(document.getElementById('require').value=="Yes")
@@ -182,18 +163,6 @@ const hi=document.getElementsByClassName('pa')[0].addEventListener('click',()=>{
   if(document.getElementById('require').value=="No")
   document.body.getElementsByClassName('gues')[0].style.display="none"
  }
-document.getElementById('require').addEventListener("click",()=>{
-  if(document.getElementById('require').value=="Yes")
-  document.body.getElementsByClassName('gues')[0].style.display="inline-flex"
-  if(document.getElementById('require').value=="No")
-  document.body.getElementsByClassName('gues')[0].style.display="none"
-})
-document.getElementById('require').addEventListener("mouseover",()=>{
-  if(document.getElementById('require').value=="Yes")
-  document.body.getElementsByClassName('gues')[0].style.display="inline-flex"
-  if(document.getElementById('require').value=="No")
-  document.body.getElementsByClassName('gues')[0].style.display="none"
-})
 
 
 //cards events
