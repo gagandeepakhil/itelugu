@@ -10,7 +10,7 @@ const send_details=(req,res)=>{
     blog.save()
         .then(result => {
         console.log(result);
-        res.render('/success')
+        res.redirect('/success')
         })
         .catch(err => {
         console.log(err);
