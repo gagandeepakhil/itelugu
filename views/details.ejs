@@ -22,6 +22,7 @@
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
+                <th scope="col">UID</th>
                 <th scope="col">PURPOSE FOR REGISTERING</th>
                 <th colspan="2" scope="col">NAME</th>
                 <th scope="col">AFFILIATION</th>
@@ -34,11 +35,15 @@
               </tr>
             </thead>
             <tbody>
+              <% var i=1 %>
                     <% data.forEach(function (dat){ %>
                          <% dat.forEach(function (da){ %> 
                         <% if(da.purpose=="visiting"){ %>
                         <tr>
+                          <% da.uid="V"+("00" + (i)).slice(-3) %>
+                          <% i=i+1 %>
                             <th scope="row"><%= da._id %> </th>
+                            <th scope="row"><%= da.uid %> </th>
                             <td><%= da.purpose %></td>
                             <td colspan="2"><%= da.name %></td>
                             <td><%= da.affiliation %></td>
@@ -59,6 +64,7 @@
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
+                <th scope="col">UID</th>
                 <th scope="col">PURPOSE FOR REGISTERING</th>
                 <th scope="col">NAME</th>
                 <th scope="col">AFFILIATION</th>
@@ -71,13 +77,18 @@
               </tr>
             </thead>
             <tbody>
+              <% var j=1 %>
               <tr>
                 <% data.forEach(function (dat){ %>
                     <% dat.forEach(function (da){ %> 
                    <% if(da.purpose=="participating"){ %>
                     <% if(da.require!="Yes"){ %> 
                    <tr>
+                       
+                          <% da.uid="PN"+("00" + (j)).slice(-3) %>
+                          <% j=j+1 %>
                        <th scope="row"><%= da._id %> </th>
+                       <th scope="row"><%= da.uid %> </th>
                        <td><%= da.purpose %></td>
                        <td><%= da.name %></td>
                        <td><%= da.affiliation %></td>
@@ -98,6 +109,7 @@
             <thead class="thead-dark">
               <tr>
                 <th scope="col">#</th>
+                <th scope="col">UID</th>
                 <th scope="col">PURPOSE FOR REGISTERING</th>
                 <th scope="col">NAME</th>
                 <th scope="col">AFFILIATION</th>
@@ -115,12 +127,17 @@
               </tr>
             </thead>
             <tbody>
+              <% var k=1 %>
                 <% data.forEach(function (dat){ %>
                     <% dat.forEach(function (da){ %> 
                    <% if(da.purpose=="participating"){ %>
                     <% if(da.require=="Yes"){ %> 
                    <tr>
+                      
+                      <% da.uid="PR"+("00" + (k)).slice(-3) %>
+                      <% k=k+1 %>
                        <th scope="row"><%= da._id %> </th>
+                       <th scope="row"><%= da.uid %></th>
                        <td><%= da.purpose %></td>
                        <td><%= da.name %></td>
                        <td><%= da.affiliation %></td>

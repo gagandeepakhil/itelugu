@@ -4,6 +4,7 @@ const dbURI="mongodb+srv://gagan:gagan@cluster.xdg5ro5.mongodb.net/?retryWrites=
 const Schema = mongoose.Schema;
 
 const dataSchema = new Schema({
+
     
         purpose: {
             type:String,
