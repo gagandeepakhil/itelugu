@@ -81,11 +81,11 @@
               <tr>
                 <% data.forEach(function (dat){ %>
                     <% dat.forEach(function (da){ %> 
-                   <% if(da.purpose=="participating"){ %>
+                   <% if(da.purpose=="visiting"){ %>
                     <% if(da.require!="Yes"){ %> 
                    <tr>
                        
-                          <% da.uid="PN"+("00" + (j)).slice(-3) %>
+                          <% da.uid="VR"+("00" + (j)).slice(-3) %>
                           <% j=j+1 %>
                        <th scope="row"><%= da._id %> </th>
                        <th scope="row"><%= da.uid %> </th>
@@ -134,7 +134,7 @@
                     <% if(da.require=="Yes"){ %> 
                    <tr>
                       
-                      <% da.uid="PR"+("00" + (k)).slice(-3) %>
+                      <% da.uid="R"+("00" + (k)).slice(-3) %>
                       <% k=k+1 %>
                        <th scope="row"><%= da._id %> </th>
                        <th scope="row"><%= da.uid %></th>
