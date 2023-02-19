@@ -558,7 +558,20 @@ transform: translateX(0);
   height: 70vh;
 }
 /* event cards */
-
+.bhag{
+  width: 70%;
+}
+.ibam{
+ width: 10%;
+}
+@media (max-width:430px) {
+  .bhag{
+    width: 90%;
+  } 
+  .ibam{
+    width: 20%;
+  }
+}
 .dir{
   font-size: 18px;
   width: 98vw;
@@ -725,7 +738,9 @@ transform: translateX(0);
 }
 .thippu{
   margin-top: 5%;
-  display: none;
+  /* display: none; */
+  font-weight: 700;
+
 }
 @media (max-width:430px){
   .orey{
@@ -738,8 +753,7 @@ transform: translateX(0);
 }
 @media (max-width:800px){
   .thippu{
-    display: block;
-    font-weight: 700;
+    /* display: block; */
 
   }
 }
@@ -934,6 +948,11 @@ form input,select{
 .contact{
   height: 40vh;
   background-color: rgb(227, 169, 61);
+}
+@media (min-width:431px) {
+  .contact{
+    font-size: 1.3rem;
+  }
 }
 
 /* support us  */
