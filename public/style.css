@@ -538,7 +538,7 @@ transform: translateX(0);
 /* event cards */
 
 .dir{
-  font-size: 16px;
+  font-size: 18px;
   width: 98vw;
   display: flex;
   flex-direction: row;
