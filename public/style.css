@@ -751,12 +751,7 @@ transform: translateX(0);
     width: 8%;
   }
 }
-@media (max-width:800px){
-  .thippu{
-    /* display: block; */
 
-  }
-}
 .ntb{
   margin-left: 22%;
 }
