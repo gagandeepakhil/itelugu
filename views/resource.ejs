@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styled.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@100&display=swap" rel="stylesheet">
+    <title>RESOURCE PERSONS LIST</title>
+</head>
+<body>
+    <div class="resource">
+        <table class="table table-striped table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">UID</th>
+              <th scope="col">PURPOSE FOR REGISTERING</th>
+              <th scope="col">NAME</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% var k=1 %>
+              <% re.forEach(function (dat){ %>
+                 <tr>
+                    
+                    <% uid="R"+("00" + (k)).slice(-3) %>
+                    <% k=k+1 %>
+                     <th scope="row"><%= uid %> </th>
+                     <td>RESOURCE PERSONS</td>
+                     <td><%= dat %></td>
+                 </tr>
+             <% }) %>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>
