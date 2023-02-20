@@ -912,6 +912,8 @@ form input,select{
 }
 /* sponsers */
 .sponsers{
+  margin: auto;
+  width: 90vw;
   margin-top: 2%;
   padding-top: 1%;
   padding-bottom: 2%;
@@ -927,6 +929,8 @@ form input,select{
 .spo img{
   border: 1px solid black;
   border-radius: 5px;
+  margin-left: 2%;
+  margin-bottom: 5px;
 }
 
 
@@ -1051,6 +1055,9 @@ form input,select{
   }
   .spo>img{
     margin-bottom: 10px;
+  }
+  .spo img{
+    margin-left: 0;
   }
   .table1{
     width: 95%;
