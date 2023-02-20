@@ -682,6 +682,23 @@ transform: translateX(0);
 .dap2{
   font-weight: 600;
 }
+.gr-l{
+  width: 80%;
+}
+@media (max-width:430px) and (min-width:322px) {
+  .gr-l{
+    width: 100%;
+  }
+}
+@media (max-width:321px) {
+  .news{
+    width: 100%;
+  }
+  .gr-l{
+   width: 100%;
+   margin: auto;
+  }
+}
 .table1 td {border-bottom: 0px !important;border-right: solid 1px #ccc !important;}
 
 .table1 h3{
