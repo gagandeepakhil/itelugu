@@ -689,6 +689,9 @@ transform: translateX(0);
   .gr-l{
     width: 100%;
   }
+  .gr-l table{
+    font-size: 14px;
+  }
 }
 @media (max-width:321px) {
   .news{
@@ -697,6 +700,9 @@ transform: translateX(0);
   .gr-l{
    width: 100%;
    margin: auto;
+  }
+  .gr-l table{
+    font-size: 12px;
   }
 }
 .table1 td {border-bottom: 0px !important;border-right: solid 1px #ccc !important;}
