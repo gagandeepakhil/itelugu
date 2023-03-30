@@ -81,6 +81,9 @@ router.get("/resource",function(req,res){
 router.get("/success",function(req,res){
    res.render('success',{})
 })
+router.get("/2023",function(req,res){
+   res.render('itelugu2023',{})
+})
 router.get("/",function(req,res){
    res.render('index',{})
 })
