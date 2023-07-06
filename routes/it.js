@@ -82,7 +82,19 @@ router.get("/success",function(req,res){
    res.render('success',{})
 })
 router.get("/2023",function(req,res){
+   res.render('2023',{})
+})
+router.get("/2024",function(req,res){
+   res.render('2024',{})
+})
+router.get("/2025",function(req,res){
+   res.render('2025',{})
+})
+router.get("/2023-main",function(req,res){
    res.render('itelugu2023',{})
+})
+router.get("/2023-mid",function(req,res){
+   res.render('itelugu2023-mid',{})
 })
 router.get("/",function(req,res){
    res.render('index',{})

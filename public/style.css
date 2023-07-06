@@ -8,7 +8,7 @@
 body{
   font-family: ntr;
 }
-.borderpettu{
+/* .borderpettu{
   position:absolute;
   top:22%;
   width: 90%;
@@ -18,19 +18,8 @@ body{
   border-radius: 20px;
   box-shadow:0px 0px 30px orange;
   /* background-color: #d27742; */
-}
-@media (min-width:1000px) {
-  .borderpettu{
-  position:absolute;
-  top:22%;
-  width: 30%;
-  height: 50%;
-  left:33%;
-  border: 3px solid #d27742;
-  border-radius: 20px;
-  /* background-color: #d27742; */
-  }
-}
+/* } */
+
 .spu{
   position: fixed;
   bottom:9%;
@@ -1171,4 +1160,18 @@ form input,select{
   @font-face {
     font-family: "ntr";
     src: url("ntr.otf") format("opentype")
+    }
+
+
+
+    .hide-ayipo{
+      display: none;
+    }
+    @media (max-width:560px) {
+      .hide-avvaku{
+        display: none;
+      }
+      .hide-ayipo{
+        display: block;
+      }
     }
