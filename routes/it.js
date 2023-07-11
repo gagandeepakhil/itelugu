@@ -90,10 +90,10 @@ router.get("/2024",function(req,res){
 router.get("/2025",function(req,res){
    res.render('2025',{})
 })
-router.get("/2023-main",function(req,res){
+router.get("/2023main",function(req,res){
    res.render('itelugu2023',{})
 })
-router.get("/2023-mid",function(req,res){
+router.get("/2023mid",function(req,res){
    res.render('itelugu2023-mid',{})
 })
 router.get("/",function(req,res){
