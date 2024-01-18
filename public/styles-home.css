@@ -71,27 +71,18 @@ html,body{
   .event_cards1{
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 50%;
     transform: translate(-50%,-50%);
   }
-  .event_cards2{
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%,-50%);
-  }
+
   .event_cards11{
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 150%;
   }
-  .event_cards22{
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
+
 
   @media(min-width:560px){
     #logo{

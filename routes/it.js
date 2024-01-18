@@ -96,6 +96,9 @@ router.get("/2023main",function(req,res){
 router.get("/2023mid",function(req,res){
    res.render('itelugu2023-mid',{})
 })
+router.get("/2024main",function(req,res){
+   res.render('itelugu2024',{})
+})
 router.get("/",function(req,res){
    res.render('index',{})
 })
