@@ -1,0 +1,58 @@
+.endharo{
+    color: rgb(187, 0, 255);
+    font-weight: 700;
+}
+.invi{
+    text-align:left;
+    margin:2% 2%;
+    font-size: 120%;
+}
+.pic2,.pic3{
+    width: 100px;
+}
+.invi1{
+    text-align: center;margin:2% 10%;font-size: 150%;
+}
+
+.invi1_b{
+    text-align:left;margin:2% 2%;line-height: 1.5 !important; font-size: 120%;font-weight: 600;
+}
+.invi1_f{
+    text-align: center;margin: 2% 2%;color: red;font-weight: 600;font-size: 100%;
+}
+
+
+@media (max-width:360px) {
+    .endharo{
+        font-weight: 650;
+        font-size: 100%;
+    } 
+    .pic4{
+        width: 95vw;
+    }
+    .pic1{
+        width:130px;
+        margin-left: -45%;
+    }
+    .pic2,.pic3{
+        width: 40px;
+    }
+    .invi1{
+        text-align: center;margin:2% 2%;font-size: 75%;
+    }
+    .invi1_h{
+        margin-top: 5%;
+        font-size: 90%;
+    }
+    .invi1_s{
+        /* margin-top: 5%; */
+        margin: 0 5%;
+        font-size: 80%;
+    }
+    .invi1_b{
+        text-align:left;margin:2% 2%;line-height: 1.5 !important; font-size: 80%;font-weight: 600;
+    }
+    .invi1_f{
+        text-align: center;margin: 2% 2%;color: red;font-weight: 600;font-size: 90%;
+    }
+}
