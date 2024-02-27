@@ -21,9 +21,7 @@
     text-align: center;margin: 2% 2%;color: red;font-weight: 600;font-size: 100%;
 }
 
-.t_div{
-    /* width: 10px; */
-}
+
 table{
     width: 10% !important;
 }
@@ -66,7 +64,7 @@ td,th{
     bottom: 0;
     margin: auto;
     border-radius: 10px;
-    box-shadow:5px 5px 5px #000000;
+    box-shadow:5px 5px 5px #000000 ;
     /* padding:  !important; */
 }
 
