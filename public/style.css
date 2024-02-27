@@ -680,12 +680,7 @@ transform: translateX(0);
 .t1{
   background-color: antiquewhite;
 }
-.table{
-  background-color: black;
-  border:10px solid rgb(0,0,0) !important;
-  border-radius: 30px !important;
-  border-collapse: separate;
-}
+
 .table1{
   margin: 0;
   margin: auto;

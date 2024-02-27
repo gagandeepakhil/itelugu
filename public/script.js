@@ -234,6 +234,49 @@ function eon8(){
 function eoff8(){
   document.getElementById('einfo8').style.display="none"
 }
+function eon9(){
+  document.getElementById('einfo9').style.display="block"
+}
+function eoff9(){
+  document.getElementById('einfo9').style.display="none"
+}
+function eon10(){
+  document.getElementById('einfo10').style.display="block"
+}
+function eoff10(){
+  document.getElementById('einfo10').style.display="none"
+}
+function eon11(){
+  document.getElementById('einfo11').style.display="block"
+}
+function eoff11(){
+  document.getElementById('einfo11').style.display="none"
+}
+function eon12(){
+  document.getElementById('einfo12').style.display="block"
+}
+function eoff12(){
+  document.getElementById('einfo12').style.display="none"
+}
+function eon13(){
+  document.getElementById('einfo13').style.display="block"
+}
+function eoff13(){
+  document.getElementById('einfo13').style.display="none"
+}
+function eon14(){
+  document.getElementById('einfo14').style.display="block"
+}
+function eoff14(){
+  document.getElementById('einfo14').style.display="none"
+}
+function eon15(){
+  document.getElementById('einfo15').style.display="block"
+}
+function eoff15(){
+  document.getElementById('einfo15').style.display="none"
+}
+
 
 
 // var y=window.matchMedia("(max-width:430px)")
