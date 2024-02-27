@@ -49,7 +49,7 @@ td,th{
 
 
 #einfo9,#einfo10,#einfo11,#einfo12,#einfo13,#einfo14,#einfo15{
-    display:none ;
+    display:none;
     height: 80vh;
     width: 90%;
     z-index: 4;
