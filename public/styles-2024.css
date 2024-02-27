@@ -42,6 +42,10 @@ table{
     .ima{
         width: 100% !important;
     }
+    .fp{
+        font-size: 100% !important;
+    }
+    
 }
 td,th{
     border-width: 3px !important;
@@ -70,12 +74,15 @@ td,th{
 
 .eb{
     position: absolute;
-    width: 2.6% !important;
+    width: 3.6%;
     right: 10px;
-    top: 20px !important;
-    background-color:rgba(0, 0, 0, 0.778);
+    top: 10px;
+    background-color:rgba(0, 0, 0, 1) !important;
     border: 0cm;
     padding: 0%;
+}
+.fp{
+    font-size: 200%;
 }
 
 ::-webkit-scrollbar-track {
