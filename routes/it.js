@@ -81,20 +81,11 @@ router.get("/resource",function(req,res){
 router.get("/success",function(req,res){
    res.render('success',{})
 })
-// router.get("/2023",function(req,res){
-//    res.render('2023',{})
-// })
-// router.get("/2024",function(req,res){
-//    res.render('2024',{})
-// })
 router.get("/2025",function(req,res){
-   res.render('2025',{})
+   res.render('itelugu2025',{})
 })
 router.get("/2023",function(req,res){
    res.render('itelugu2023',{})
-})
-router.get("/2023mid",function(req,res){
-   res.render('itelugu2023-mid',{})
 })
 router.get("/2024",function(req,res){
    res.render('itelugu2024',{})

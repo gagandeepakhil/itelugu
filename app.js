@@ -7,7 +7,7 @@ const itroutesd=require("./routes/itd")
 const mongoose = require('mongoose');
 
 const dbURI="mongodb+srv://gagan:gagan@cluster.xdg5ro5.mongodb.net/?retryWrites=true&w=majority"
-
+mongoose.set('strictQuery', false);
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result =>{ 
     const port = process.env.PORT || 3000;
@@ -22,7 +22,7 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   app.use(express.urlencoded({ extended: true }));
 
   app.set("view engine","ejs");
-  app.set('views', __dirname + '/views');
+  app.set('views', path.join(__dirname, 'views'));
 
   app.use("/details",itroutesd);
   app.use("/",itroutes);
