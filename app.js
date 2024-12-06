@@ -6,7 +6,7 @@ const itroutes=require("./routes/it")
 const itroutesd=require("./routes/itd")
 const mongoose = require('mongoose');
 
-const dbURI="mongodb+srv://gagan:gagan@cluster.xdg5ro5.mongodb.net/?retryWrites=true&w=majority"
+const dbURI="mongodb+srv://deepak:JORvRq1DKwGgi44D@deepak.uapce.mongodb.net/?retryWrites=true&w=majority&appName=deepak"
 mongoose.set('strictQuery', false);
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result =>{ 
