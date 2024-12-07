@@ -1,5 +1,51 @@
 /* Modify */
 
+.news_mini{
+  margin: 0 10%;
+  font-weight: 600;
+  font-size: 120%;
+}
+
+.mini{
+  font-weight: 700;
+  font-size: 80% !important;
+}
+.mini h2{
+  font-weight: 700;
+}
+.align{
+  text-align: justify;
+}
+
+.mini_m{
+  margin-top: 5%;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+.sub{
+  text-decoration: underline;
+  color: blue;
+}
+
+
+@media (max-width : 560px) {
+  .news_mini{
+    font-size: 100%;
+    margin: 0 5%;
+  } 
+}
+/* ====================================================================== */
+
+body{
+  font-family: ntr;
+}
 .news_row{
     margin: 0 5%;
 }
