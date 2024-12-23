@@ -33,6 +33,37 @@
   text-decoration: underline;
   color: blue;
 }
+/* ====================================================================== */
+.new_deepu{
+  margin: 0 10%;
+  font-weight: 600;
+  font-size: 120%;
+  text-align: justify;
+
+}
+.sub1{
+  color: red;
+
+}
+span{
+  color:purple;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width : 560px) {
