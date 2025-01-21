@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const itelugu=require("../models/ite")
 const mongoose = require('mongoose');
-const dbURI="mongodb+srv://gagan:gagan@cluster.xdg5ro5.mongodb.net/?retryWrites=true&w=majority"
+const dbURI="mongodb+srv://deepak:JORvRq1DKwGgi44D@deepak.uapce.mongodb.net/?retryWrites=true&w=majority&appName=deepak"
 
-router.get("/details",(req,res)=>{
+router.get("/",(req,res)=>{
     mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result =>{ 
     var da=[]
