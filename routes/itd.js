@@ -4,7 +4,7 @@ const itelugu=require("../models/ite")
 const mongoose = require('mongoose');
 const dbURI="mongodb+srv://gagan:gagan@cluster.xdg5ro5.mongodb.net/?retryWrites=true&w=majority"
 
-router.get("/",(req,res)=>{
+router.get("/details",(req,res)=>{
     mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(result =>{ 
     var da=[]
